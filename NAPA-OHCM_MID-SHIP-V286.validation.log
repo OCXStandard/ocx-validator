@@ -1,0 +1,1650 @@
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 11:45:11
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:01.688855
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:30:41
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:01.559657
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:33:05
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:01.550653
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:43:00
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:01.572969
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:47:02
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:02.644615
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:48:25
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:02.651483
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 15:49:48
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:02.574051
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 16:00:19
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:02.628755
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 16:02:29
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:01.514010
+    INFO: ----------------------------------------------------
+    INFO: ----------------------------------------------------
+    INFO:  Open Class 3D Exchange (OCX) conformance validation
+    INFO:  Version: 1.3
+    INFO:  (c) DNV GL AS. All rights reserved
+    INFO:  2022.02.26 16:05:08
+    INFO: ----------------------------------------------------
+    INFO: Importing schema from location schema_versions/OCX_Schema_V286.xsd.....
+    INFO: schema_versions/OCX_Schema_V286.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/unitsmlSchema_lite-0.9.18.xsd is OK
+    INFO: Importing schema from location /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd.....
+    INFO: /Volumes/Data/Work/ocx-validator/schema_versions/xml.xsd is OK
+    INFO: 
+    INFO: Reading model ...
+    INFO: Parsing xml file                             : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: models/NAPA-OHCM_MID-SHIP-V286.3docx syntax is OK
+    INFO: 
+    INFO: ----------------------------------------------------
+    INFO: 3Docx summary
+    INFO: ----------------------------------------------------
+    INFO: 3Docx file name                              : models/NAPA-OHCM_MID-SHIP-V286.3docx
+    INFO: Referenced OCX Schema version                : 2.8.6
+    INFO: Model name                                   : OHCM_MID-SHIP/A
+    INFO: Model timestamp                              : 2022-01-21T15:13:25.5649291+02:00
+    INFO: Author                                       : 
+    INFO: Originating system                           : NAPA Steel
+    INFO: Application version                          : XNAPA Release B5807 2021.2 master x64 X
+    INFO: Documentation                                : OCX Export
+    INFO: ----------------------------------------------------
+    INFO: MODEL VALIDATION
+    INFO: ----------------------------------------------------
+    INFO: Validating all schema names...
+    INFO: Schema names                                 : OK
+    INFO: Validating only unique objects:
+    INFO: ocxXML                                       : OK
+    INFO: Header                                       : OK
+    INFO: Vessel                                       : OK
+    INFO: DistanceTolerance                            : OK
+    INFO: AngleTolerance                               : OK
+    INFO: ClassificationData                           : OK
+    INFO: PrincipalParticulars                         : OK
+    INFO: Lpp                                          : OK
+    INFO: RuleLength                                   : OK
+    INFO: BlockCoefficient                             : OK
+    INFO: FP_Pos                                       : OK
+    INFO: MouldedBreadth                               : OK
+    INFO: MouldedDepth                                 : OK
+    INFO: ScantlingDraught                             : OK
+    INFO: DesignSpeed                                  : OK
+    INFO: AP_Pos                                       : OK
+    INFO: BuilderInformation                           : OK
+    INFO: CoordinateSystem                             : OK
+    INFO: FrameTables                                  : OK
+    INFO: XRefPlanes                                   : OK
+    INFO: RefPlane                                     : OK
+    INFO: ReferenceLocation                            : OK
+    INFO: YRefPlanes                                   : OK
+    INFO: ZRefPlanes                                   : OK
+    INFO: LocalCartesian                               : OK
+    INFO: Origin                                       : OK
+    INFO: X                                            : OK
+    INFO: Y                                            : OK
+    INFO: Z                                            : OK
+    INFO: PrimaryAxis                                  : OK
+    INFO: SecondaryAxis                                : OK
+    INFO: VesselGrid                                   : OK
+    INFO: XGrid                                        : OK
+    INFO: DistanceToAP                                 : OK
+    INFO: XSpacingGroup                                : OK
+    INFO: GridPosition                                 : OK
+    INFO: Spacing                                      : OK
+    INFO: YGrid                                        : OK
+    INFO: YSpacingGroup                                : OK
+    INFO: Panel                                        : OK
+    INFO: Description                                  : OK
+    INFO: UnboundedGeometry                            : OK
+    INFO: SurfaceRef                                   : OK
+    INFO: LimitedBy                                    : OK
+    INFO: FreeEdgeCurve3D                              : OK
+    INFO: Line3D                                       : OK
+    INFO: StartPoint                                   : OK
+    INFO: EndPoint                                     : OK
+    INFO: OcxItemPtr                                   : OK
+    INFO: NURBS3D                                      : OK
+    INFO: NURBSproperties                              : OK
+    INFO: KnotVector                                   : OK
+    INFO: ControlPtList                                : OK
+    INFO: ControlPoint                                 : OK
+    INFO: Point3D                                      : OK
+    INFO: OuterContour                                 : OK
+    INFO: ComposedOf                                   : OK
+    INFO: Plate                                        : OK
+    INFO: PhysicalProperties                           : OK
+    INFO: DryWeight                                    : OK
+    INFO: CenterOfGravity                              : OK
+    INFO: PlateMaterial                                : OK
+    INFO: Thickness                                    : OK
+    INFO: StiffenedBy                                  : OK
+    INFO: Stiffener                                    : OK
+    INFO: MaterialRef                                  : OK
+    INFO: SectionRef                                   : OK
+    INFO: TraceLine                                    : OK
+    INFO: CompositeCurve3D                             : OK
+    INFO: Inclination                                  : OK
+    INFO: WebDirection                                 : OK
+    INFO: FlangeDirection                              : OK
+    INFO: Position                                     : OK
+    INFO: SplitBy                                      : OK
+    INFO: Seam                                         : OK
+    INFO: ReferenceSurfaces                            : OK
+    INFO: SurfaceCollection                            : OK
+    INFO: NURBSSurface                                 : OK
+    INFO: FaceBoundaryCurve                            : OK
+    INFO: U_NURBSproperties                            : OK
+    INFO: UknotVector                                  : OK
+    INFO: V_NURBSproperties                            : OK
+    INFO: VknotVector                                  : OK
+    INFO: Plane3D                                      : OK
+    INFO: Normal                                       : OK
+    INFO: GridRef                                      : OK
+    INFO: EdgeReinforcement                            : OK
+    INFO: OffsetV                                      : OK
+    INFO: EdgeCurveRef                                 : OK
+    INFO: CutBy                                        : OK
+    INFO: Hole2DContour                                : OK
+    INFO: HoleRef                                      : OK
+    INFO: Transformation                               : OK
+    INFO: ClassCatalogue                               : OK
+    INFO: MaterialCatalogue                            : OK
+    INFO: Material                                     : OK
+    INFO: Density                                      : OK
+    INFO: YoungsModulus                                : OK
+    INFO: PoissonRatio                                 : OK
+    INFO: YieldStress                                  : OK
+    INFO: UltimateStress                               : OK
+    INFO: XSectionCatalogue                            : OK
+    INFO: BarSection                                   : OK
+    INFO: LBar                                         : OK
+    INFO: Height                                       : OK
+    INFO: Width                                        : OK
+    INFO: WebThickness                                 : OK
+    INFO: FlangeThickness                              : OK
+    INFO: TBar                                         : OK
+    INFO: FlatBar                                      : OK
+    INFO: HoleShapeCatalogue                           : OK
+    INFO: Hole2D                                       : OK
+    INFO: RectangularHole                              : OK
+    INFO: FilletRadius                                 : OK
+    INFO: UnitsML                                      : OK
+    INFO: UnitSet                                      : OK
+    INFO: Unit                                         : OK
+    INFO: UnitName                                     : OK
+    INFO: UnitSymbol                                   : OK
+    INFO: RootUnits                                    : OK
+    INFO: EnumeratedRootUnit                           : OK
+    INFO: DimensionSet                                 : OK
+    INFO: Dimension                                    : OK
+    INFO: Length                                       : OK
+    INFO: Time                                         : OK
+    INFO: Mass                                         : OK
+    INFO: ----------------------------------------------------
+    INFO: Number of entities validated                 : 126
+    INFO: Validation completed                         : OK
+    INFO: Elapsed time:         0:00:02.580137
+    INFO: ----------------------------------------------------
