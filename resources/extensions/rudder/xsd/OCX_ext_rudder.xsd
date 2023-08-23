@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+		xmlns:unitsml="urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema_lite-0.9.18"
+		xmlns:ocxRU="https://3docx.org/fileadmin/ocx_schema/extension/rudder/V120/OCX_ext_rudder.xsd"
+		xmlns:ocx="https://3docx.org/fileadmin//ocx_schema//V286_fix//OCX_Schema.xsd"
+		targetNamespace="https://3docx.org/fileadmin/ocx_schema/extension/rudder/V120/OCX_ext_rudder.xsd"
+		elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.0">
+	<!-- Import the OCX published schema -->
+	<xs:import namespace="https://3docx.org/fileadmin//ocx_schema//V286_fix//OCX_Schema.xsd" schemaLocation="file://OCX_Schema.xsd"/>
+	<xs:import namespace="urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema_lite-0.9.18" schemaLocation="file://unitsmlSchema_lite-0.9.18.xsd"/>
+	<!--	Copyright 2023 Open Class 3D Exchange (OCX) Consortium (https://3docx.org)
+			Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+			http://www.apache.org/licenses/LICENSE-2.0
+			Unless required by applicable law or agreed to in writing, the 3Docx standard and software distributed under the License is distributed on an
+			"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 	either expressed or implied.
+			The OCX Consortium is not liable to any use whatsoever of the distributed standard or software based on the standard.
+			See the License for the specific language governing permissions and limitations under the License.
+	-->
+	<!-- Root Element -->
+	<xs:element name="RudderDocument" type="ocxRU:RudderDocument_T">
+		<xs:annotation>
+			<xs:documentation>Root element of the Rudder document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RudderDocument_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the root element.</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="ocx:Header"/>
+			<xs:element ref="ocxRU:SemiSpadeRudder"/>
+			<xs:element ref="ocxRU:GeneralRudderData"/>
+			<xs:element ref="ocxRU:RudderMaterials"/>
+			<xs:element ref="ocx:DesignView"/>
+			<xs:element ref="unitsml:UnitsML"/>
+		</xs:choice>
+		<xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="1.2.0">
+			<xs:annotation>
+				<xs:documentation>Current XML schema version (Format - x.y.z) x : Incremented for backward incompatible changes ( Ex - Adding a required attribute, etc.) y : Major backward compatible changes [ Ex - Adding a new node ,fixing major CRs,etc..] z : Minor backward compatible changes (Ex - adding an optional attribute, etc).</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- ========================================================================================  -->
+	<!--RUDDER COMPONENTS-->
+	<!-- ========================================================================================  -->
+	<xs:element name="SemiSpadeRudder">
+		<xs:annotation>
+			<xs:documentation>The  model-based definitiion of a semi-spade rudder type.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ocxRU:SemiSpadeRudder_T"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="SemiSpadeRudder_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the semi-spade rudder.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:EntityBase_T">
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="ocxRU:RudderCoordinateSystem"/>
+					<xs:element ref="ocxRU:RudderPlate" maxOccurs="unbounded"/>
+					<xs:element ref="ocxRU:CastedPart" maxOccurs="unbounded"/>
+					<xs:element ref="ocxRU:RudderStock"/>
+					<xs:element ref="ocxRU:Pintle" maxOccurs="unbounded"/>
+					<xs:element ref="ocxRU:Liner" maxOccurs="unbounded"/>
+					<xs:element ref="ocxRU:Nut" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RudderPart_T">
+		<xs:annotation>
+			<xs:documentation>Abstract Type definition of a rudder part.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:EntityBase_T">
+				<xs:choice maxOccurs="2">
+					<xs:element ref="ocx:MaterialRef"/>
+					<xs:element ref="ocx:ExternalGeometryRef"/>
+				</xs:choice>
+				<xs:attribute ref="ocxRU:rudderFunction" use="required"/>
+				<xs:attribute ref="ocx:tightness" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Pintle">
+		<xs:annotation>
+			<xs:documentation>The rudder pintle.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ocxRU:Pintle_T"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Pintle_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder pintle.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocxRU:BearingThickness">
+						<xs:annotation>
+							<xs:documentation>The pintle bearing thickness.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Nut" type="ocxRU:Nut_T">
+		<xs:annotation>
+			<xs:documentation>The rudder nut.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="Nut_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder nut.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocxRU:OuterDiameter"/>
+					<xs:element ref="ocxRU:InnerDiameter"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="CastedPart" type="ocxRU:CastedPart_T">
+		<xs:annotation>
+			<xs:documentation>A rudder casted part.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="CastedPart_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder pintle.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:attribute name="NDT" type="xs:string"/>
+				<xs:attribute name="heatTreatment" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="RudderStock" type="ocxRU:RudderStock_T">
+		<xs:annotation>
+			<xs:documentation>The rudder stock.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RudderStock_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder stock.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocxRU:Liner"/>
+					<xs:element ref="ocxRU:Bush"/>
+					<xs:element ref="ocxRU:BearingThickness">
+						<xs:annotation>
+							<xs:documentation>The neck  bearing thickness of the rudder stock.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="RudderPlate" type="ocxRU:RudderPlate_T">
+		<xs:annotation>
+			<xs:documentation>The rudder plating.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RudderPlate_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder plating.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocx:Thickness"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Liner" type="ocxRU:Liner_T">
+		<xs:annotation>
+			<xs:documentation>The rudder stock or pintle liner.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="Liner_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the liner.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocx:Length"/>
+					<xs:element ref="ocxRU:OuterDiameter"/>
+					<xs:element ref="ocxRU:InnerDiameter"/>
+					<xs:element ref="ocx:Thickness"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Bush" type="ocxRU:Bush_T">
+		<xs:annotation>
+			<xs:documentation>The rudder bushr.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="Bush_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the rudder bush.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocxRU:RudderPart_T">
+				<xs:sequence>
+					<xs:element ref="ocxRU:OuterDiameter"/>
+					<xs:element ref="ocxRU:InnerDiameter"/>
+					<xs:element ref="ocx:Length"/>
+					<xs:element ref="ocx:Thickness"/>
+					<xs:element ref="ocxRU:BushAllowableSurfacePressure"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ========================================================================================  -->
+	<!-- GENERAL RUDDER DATA-->
+	<!-- ========================================================================================  -->
+	<xs:element name="RudderCoordinateSystem" type="ocxRU:RudderCoordinateSystem_T">
+		<xs:annotation>
+			<xs:documentation>The rudder coordinate system.  X = 0 ant the centre of rudder stock. Z = 0 at base.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RudderCoordinateSystem_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of rudder coordinate system.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:DescriptionBase_T">
+				<xs:choice maxOccurs="3">
+					<xs:element ref="ocx:XGrid"/>
+					<xs:element ref="ocx:YGrid"/>
+					<xs:element ref="ocx:ZGrid"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="GeneralRudderData" type="ocxRU:GeneralRudderData_T">
+		<xs:annotation>
+			<xs:documentation>The rudder data.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="GeneralRudderData_T">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="ocxRU:MaxServiceSpeedAhead"/>
+			<xs:element ref="ocxRU:MaxServiceSpeedAstern"/>
+			<xs:element ref="ocxRU:IceClass"/>
+			<xs:element ref="ocxRU:RudderDimensions"/>
+		</xs:choice>
+		<xs:attribute ref="ocxRU:rudderArrangement" use="required"/>
+		<xs:attribute ref="ocxRU:rudderProfileType" use="required"/>
+	</xs:complexType>
+	<xs:element name="IceClass" type="ocxRU:IceClass_T">
+		<xs:annotation>
+			<xs:documentation>The ICE notation of the rudder if any.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="IceClass_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the IceClass.</xs:documentation>
+		</xs:annotation>
+		<xs:choice minOccurs="0" maxOccurs="2">
+			<xs:element ref="ocxRU:MaxServiceSpeedAhead"/>
+			<xs:element ref="ocxRU:MaxServiceSpeedAstern"/>
+		</xs:choice>
+		<xs:attribute ref="ocxRU:iceNotation" use="required"/>
+	</xs:complexType>
+	<xs:element name="MaxServiceSpeedAhead" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Maximum service speeed ahead.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MaxServiceSpeedAstern" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Maximum service speed astern.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="OuterDiameter" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>The outer diameter of a part.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="InnerDiameter" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>The inner diameter of a part.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="BearingThickness" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>The bearing thickness of the parent element (pintle, stock).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="BushAllowableSurfacePressure">
+		<xs:annotation>
+			<xs:documentation>The allowable surface pressure of the bush in Pa.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RudderDimensions">
+		<xs:annotation>
+			<xs:documentation>The main rudder dimensions.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="ocxRU:NeckBearingHeightHn"/>
+				<xs:element ref="ocxRU:UpperBearingHeightHu"/>
+				<xs:element ref="ocxRU:UpperCouplingHeightHc"/>
+				<xs:element ref="ocxRU:HornPintleHeightHh"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NeckBearingHeightHn" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Neck bearing height mesured form rudder base (bottom), Hn.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="UpperCouplingHeightHc" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Upper coupling height mesured form rudder base (bottom), Hc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="UpperBearingHeightHu" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Upper bearing height mesured form rudder base (bottom), Hu.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="HornPintleHeightHh" type="ocx:Quantity_T">
+		<xs:annotation>
+			<xs:documentation>Horn pintle height mesured form rudder base (bottom), Hh.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- ========================================================================================  -->
+	<!-- RUDDER MATERIAL DATA-->
+	<!-- ========================================================================================  -->
+	<xs:element name="RudderMaterials" type="ocxRU:RudderMaterials_T">
+		<xs:annotation>
+			<xs:documentation>Catalogue of Rudder material types.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RudderMaterials_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of catalogue rudder materials.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:MaterialCatalogue_T">
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="ocxRU:ForgedMaterial" maxOccurs="unbounded"/>
+					<xs:element ref="ocxRU:CastedMaterial" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CharpyVData_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the Charpy V test data</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:Material_T"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="CharpyVData" type="ocxRU:CharpyVData_T">
+		<xs:annotation>
+			<xs:documentation>The Charpy V test data for a material.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="ForgedMaterial_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the forged material data</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:Material_T"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="ForgedMaterial" type="ocxRU:CastedMaterial_T">
+		<xs:annotation>
+			<xs:documentation>Forged material data.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="CastedMaterial_T">
+		<xs:annotation>
+			<xs:documentation>Type definition of the Charpy V test data.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ocx:Material_T"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="CastedMaterial" type="ocxRU:CastedMaterial_T">
+		<xs:annotation>
+			<xs:documentation>The Charpy V test data for a casted part.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- ========================================================================================  -->
+	<!-- ATTRIBUTES -->
+	<!-- ========================================================================================  -->
+	<xs:attribute name="rudderProfileType">
+		<xs:annotation>
+			<xs:documentation>The rudder profile types.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value=""/>
+				<xs:enumeration value="Mixed profiles"/>
+				<xs:enumeration value="Hollow profile"/>
+				<xs:enumeration value="Flat-sided"/>
+				<xs:enumeration value="NACA/Göttingen"/>
+				<xs:enumeration value="Nozzle rudder"/>
+				<xs:enumeration value="Rudder with flap"/>
+				<xs:enumeration value="Single plate"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="rudderArrangement">
+		<xs:annotation>
+			<xs:documentation>The rudder arrangement types.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Normal"/>
+				<xs:enumeration value="Not in propeller slip stream"/>
+				<xs:enumeration value="Behind fixed propeller nozzle"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="rudderFunction">
+		<xs:annotation>
+			<xs:documentation>The rudder function type.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Lower Casting"/>
+				<xs:enumeration value="Upper Casting"/>
+				<xs:enumeration value="Top Plate"/>
+				<xs:enumeration value="Bottom Plate"/>
+				<xs:enumeration value="Mid Top Plate"/>
+				<xs:enumeration value="Rudder Nose"/>
+				<xs:enumeration value="Plate to Solid"/>
+				<xs:enumeration value="Outer Plate"/>
+				<xs:enumeration value="Removable Plate"/>
+				<xs:enumeration value="Tail"/>
+				<xs:enumeration value="Vertical Plate"/>
+				<xs:enumeration value="Upper Cover Plate"/>
+				<xs:enumeration value="Below Cover Plate"/>
+				<xs:enumeration value="Horizontal Plate"/>
+				<xs:enumeration value="Sub Plate"/>
+				<xs:enumeration value="Hole"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="iceNotation">
+		<xs:annotation>
+			<xs:documentation>The rudder ice notation.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="ICE (1A*F)"/>
+				<xs:enumeration value="ICE (1A*)"/>
+				<xs:enumeration value="ICE (1A)"/>
+				<xs:enumeration value="ICE (1B)"/>
+				<xs:enumeration value="ICE (1C)"/>
+				<xs:enumeration value="ICE-C"/>
+				<xs:enumeration value="NONE"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>
