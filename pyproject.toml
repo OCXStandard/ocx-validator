@@ -61,17 +61,8 @@ tag_template = "v{new_version}"
 src = "pyproject.toml"
 
 [[tool.tbump.file]]
-src = "./ocx_validator/__init__.py"
-
-[[tool.tbump.file]]
-src = "unitsmlSchema_lite.xsd"
-version_template = "{major}{minor}{patch}{extra}"
-search = 'version="{current_version}"'
-
-[[tool.tbump.file]]
-src = "unitsmlSchema_lite.xsd"
-version_template = "{major}{minor}{patch}{extra}"
-search = 'UnitsMLSchema_lite-{current_version}'
+src = "Dockerfile"
+search = 'validator.identifier'
 
 # You can specify a list of commands to
 # run after the files have been patched

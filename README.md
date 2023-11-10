@@ -19,6 +19,8 @@ Running the ``validator`` in a container:
   docker run -d --name validator -p 8080:8080  3docx/validator
 ```
    
+The [Spring Boot configuration options](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
+
 ### Documentation
 For full details on how to setup, configure and manage a validator built using the isaitb image please refer to the Interoperability Europe Test Bed's 
 [XML validation guide](https://www.itb.ec.europa.eu/docs/guides/latest/validatingXML/index.html)

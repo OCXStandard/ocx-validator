@@ -46,6 +46,11 @@ stop: ## Stop the running container
 run:  ## Set up the container
 	@docker run -d --name $(CONTAINER) -p 8080:8080  $(DOCKER_HUB)/$(IMAGE)
 
+all:  ## Build and run
+	@make stop
+	@make build
+	@make tag
+	@make run
 
 test-rudder: ## Access the Rudder upload page for validating ocx-rudder-extension v1.0.0 models
 
