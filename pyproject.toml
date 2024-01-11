@@ -9,7 +9,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ocx_validator"
-version = "0.1.0"
+version = "3.0.0b5"
 description = ""
 authors = ["ocastrup <ole.christain.astrup@dnv.com>"]
 readme = "README.md"
@@ -26,7 +26,7 @@ tbump= '*'
 github_url = "https://github.com/OCXStandard/ocx-validator"
 
 [tool.tbump.version]
-current = "3.0.0b4"
+current = "3.0.0b5"
 
 # Example of a semver regexp.
 # Make sure this matches current_version before
@@ -62,7 +62,13 @@ src = "pyproject.toml"
 
 [[tool.tbump.file]]
 src = "Dockerfile"
-search = 'validator.identifier'
+search = 'ENV validator.identifier "{current_version}"'
+
+[[tool.tbump.file]]
+src = "Makefile"
+search = 'TAG = {current_version}'
+
+
 
 # You can specify a list of commands to
 # run after the files have been patched

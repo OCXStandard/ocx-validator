@@ -4,9 +4,10 @@
 # from the environment for the first two.
 SOURCE = ./resources
 CONDA_ENV = validator
-IMAGE = validator
+IMAGE = 3docx/validator
 DOCKER_HUB = 3docx
 CONTAINER = validator
+TAG = 3.0.0b5
 
 
 # CONDA TASKS ##################################################################
@@ -27,11 +28,11 @@ conda-upd:   ## Update the conda development environment when environment.yaml h
 # DOCKER TASKS ##################################################################
 
 build:   ## Build the docker validator image using Dockerfile including the defined  resources
-	@docker build . --tag $(IMAGE)
+	@docker build . --tag $(IMAGE):$(TAG)
 
 
 tag:   ## Tag the docker rimage
-	@docker tag $(IMAGE) $(DOCKER_HUB)/$(IMAGE)
+	@docker tag $(IMAGE) $(DOCKER_HUB)/$(IMAGE):$(TAG)
 	@docker image list
 
 push:   ## Push the docker validator latest build image to dockerhub
@@ -44,7 +45,7 @@ stop: ## Stop the running container
 	@docker rm $(CONTAINER)
 
 run:  ## Set up the container
-	@docker run -d --name $(CONTAINER) -p 8080:8080  $(DOCKER_HUB)/$(IMAGE)
+	@docker run -d --name $(CONTAINER) -p 8080:8080  $(IMAGE):$(TAG)
 
 all:  ## Build and run
 	@make stop
@@ -60,6 +61,10 @@ test-ocx: ## Access the OCX upload page for validating OCX v2.8.6 models
 
 	@cmd /c start "http://localhost:8080/ocx/upload"
 .PHONY: build, run, test-rudder, test-ocx
+
+schematron: ## Access the OCX upload page for validating OCX v2.8.6 models
+
+	@cmd /c start "http://localhost:8080/schematronmake stop/upload"
 
 
 # HELP ########################################################################
