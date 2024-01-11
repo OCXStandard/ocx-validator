@@ -64,10 +64,14 @@ src = "pyproject.toml"
 src = "Dockerfile"
 search = 'ENV validator.identifier "{current_version}"'
 
-[[tool.tbump.file]]
-src = "Makefile"
-search = 'TAG = {current_version}'
 
+[[tool.tbump.file]]
+src = "resources/schematron/schematron.properties"
+search ='validator.report.validationServiceVersion = {current_version}'
+
+[[tool.tbump.file]]
+src = "resources/ocx/ocx.properties"
+search ='validator.report.validationServiceVersion = {current_version}'
 
 
 # You can specify a list of commands to

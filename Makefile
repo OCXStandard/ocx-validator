@@ -38,7 +38,7 @@ tag:   ## Tag the docker rimage
 push:   ## Push the docker validator latest build image to dockerhub
 	@docker logout
 	@docker login -u $(DOCKER_HUB)
-	@docker push $(DOCKER_HUB)/$(IMAGE)
+	@docker push $(DOCKER_HUB)/$(CONTAINER):$(TAG)
 
 stop: ## Stop the running container
 	@docker stop $(CONTAINER)

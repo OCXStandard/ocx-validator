@@ -1,0 +1,22 @@
+version: "2.1"
+
+services:
+  po-validator:
+    image: isaitb/xml-validator
+    container_name: po-validator
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./validator/:/config/
+    environment:
+      - validator.resourceRoot=/config/domains/
+      - validator.webhook.statistics=http://stats-collector:1080/statistics
+  stats-collector:
+    image: mockserver/mockserver:latest
+    container_name: stats-collector
+    ports:
+      - "1080:1080"
+    volumes:
+      - ./mock/:/config/
+    environment:
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/config/config.json
