@@ -2,7 +2,7 @@ FROM isaitb/xml-validator:latest
 COPY ./resources /validator/resources/
 ENV validator.resourceRoot /validator/resources/
 ENV validator.baseSoapEndpointUrl localhost:8080
-ENV validator.identifier "3.0.03c2"
+ENV validator.identifier "3.0.0rc2"
 ENV validator.about "<a href="https://3docx.org">&copy;3Docx.org</a> The service is provided under the EUROPEAN UNION PUBLIC LICENCE v1.2"
 # Servlet Spring Boot config: Setting unlimited file upload size and request size
 ENV spring.servlet.multipart.max-file-size -1
