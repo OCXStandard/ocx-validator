@@ -1126,8 +1126,11 @@ information are derived.</xs:documentation>
 				<xs:sequence>
 					<xs:element ref="ocx:SectionRef"/>
 					<xs:element ref="ocx:MaterialRef"/>
-					<xs:element ref="ocx:Inclination"/>
-					<xs:element ref="ocx:EdgeCurveRef" maxOccurs="unbounded"/>
+					<xs:element ref="ocx:Inclination" maxOccurs="unbounded"/>
+					<xs:sequence>
+						<xs:element ref="ocx:EdgeCurveRef" minOccurs="0"/>
+						<xs:element ref="ocx:TraceLine" minOccurs="0"/>
+					</xs:sequence>
 					<xs:element ref="ocx:TraceLine"/>
 				</xs:sequence>
 				<xs:attribute ref="ocx:functionType"/>
