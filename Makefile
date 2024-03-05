@@ -7,7 +7,7 @@ CONDA_ENV = validator
 IMAGE = 3docx/validator
 DOCKER_HUB = 3docx
 CONTAINER = validator
-TAG = 3.0.0b6
+TAG = 3.0.0rc2
 
 
 # CONDA TASKS ##################################################################
@@ -30,10 +30,6 @@ conda-upd:   ## Update the conda development environment when environment.yaml h
 build:   ## Build the docker validator image using Dockerfile including the defined  resources
 	@docker build . --tag $(IMAGE):$(TAG)
 
-
-tag:   ## Tag the docker rimage
-	@docker tag $(IMAGE) $(DOCKER_HUB)/$(IMAGE):$(TAG)
-	@docker image list
 
 push:   ## Push the docker validator latest build image to dockerhub
 	@docker logout
