@@ -13,6 +13,12 @@ and this project adheres to the Python [PEP 440 versioning recommendations](http
 * ``Fixed`` for any bug fixes.
 * ``Security`` in case of vulnerabilities.
 
+## [3.0.0rc3] - 2024.03.08
+Bump to 3.0.0rc3
+
+### Changed
+* Add resources for schema version 3.0.0rc3
+
 
 ## [3.0.0rc2] - 2024.03.05
 Bump to 3.0.0rc2

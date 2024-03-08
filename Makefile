@@ -7,7 +7,7 @@ CONDA_ENV = validator
 IMAGE = 3docx/validator
 DOCKER_HUB = 3docx
 CONTAINER = validator
-TAG = 3.0.0rc2
+TAG = latest
 
 
 # CONDA TASKS ##################################################################

@@ -9,8 +9,9 @@
           <sch:let name="currentGuid" value="@ocx:GUIDRef"/>
             <sch:let name="currentID" value="@*:id"/>
             <sch:let name="currentNode" value="name()"/>
-            <sch:assert test="not(@ocx:refType) and count(//*/@ocx:GUIDRef[. = $currentGuid]) = 1">
-                Element <sch:value-of select="$currentNode"/> with GUIDRef <sch:value-of select="$currentGuid"/> must not have ocx:refType attribute and should have a unique value for ocx:GUIDRef.
+            <sch:let name="mycount" value="count(//*[name() eq $currentNode][@ocx:GUIDRef])"/>
+            <sch:assert test="count(//*[name() eq $currentNode][@ocx:GUIDRef eq $currentGuid]) = 2">
+                Element <sch:value-of select="$currentNode"/> with GUIDRef <sch:value-of select="$currentGuid"/> count= <sch:value-of select="mycount"/>.
             </sch:assert>
         </sch:rule>
    </sch:pattern>
