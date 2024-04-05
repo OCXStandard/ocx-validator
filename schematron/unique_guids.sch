@@ -4,14 +4,15 @@
             queryBinding="xslt2">
    <sch:ns uri="https://3docx.org/fileadmin//ocx_schema//V300b4//OCX_Schema.xsd" prefix="ocx"/>
    <sch:title>Unique GUIDref</sch:title>
-   <sch:pattern>
+   <sch:pattern id="unique_guids">
         <sch:rule context="*[@ocx:GUIDRef]">
           <sch:let name="currentGuid" value="@ocx:GUIDRef"/>
+            <sch:let name="n_guids" value="count(*/[@ocx:GUIDRef=$currentGuid, not(@ocx:refType)])"/>
             <sch:let name="currentID" value="@*:id"/>
             <sch:let name="currentNode" value="name()"/>
             <sch:let name="mycount" value="count(//*[name() eq $currentNode][@ocx:GUIDRef])"/>
-            <sch:assert test="count(//*[name() eq $currentNode][@ocx:GUIDRef eq $currentGuid]) = 2">
-                Element <sch:value-of select="$currentNode"/> with GUIDRef <sch:value-of select="$currentGuid"/> count= <sch:value-of select="mycount"/>.
+            <sch:assert test="$n_guids gt 1">
+                Element <sch:value-of select="$currentNode"/> with GUIDRef <sch:value-of select="$currentGuid"/> is a duplicate: Count= <sch:value-of select="$n_guids"/>.
             </sch:assert>
         </sch:rule>
    </sch:pattern>
